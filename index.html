@@ -74,7 +74,6 @@
             <div class="adv-icon-box">
               <svg class="advantages-icon" width="70px" height="70px">
                 <use href="./images/icons/symbol-defs.svg#icon-antenna-icon"></use>
-
               </svg>
             </div>
 
@@ -455,10 +454,30 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <img src="./images/make-order.jpg" alt="Take your order" class="order-bcg">
-      <button type="button" class="modal-btn" data-modal-close>Not now</button>
 
-
+      <button type="button" class="modal-btn" data-modal-close>
+        <svg class="close-icon" width="18px" height="18px">
+          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="modal-form">
+        <h3 class="modal-heading">Залиште свої дані, ми вам передзвонимо</h3>
+        <form action="" class="form">
+          <label class="form-label"> Ім'я
+            <input type="text" class="input">
+          </label>
+          <label class="form-label"> Телефон
+            <input type="tel" class="input">
+          </label>
+          <label class="form-label"> Пошта
+            <input type="email" class="input">
+          </label>
+          <label class="form-label"> Коментар
+            <textarea name="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+          </label>
+          <button type="button" class="btn form-btn">Відправити</button>
+        </form>
+      </div>
     </div>
   </div>
   <script src="./modal.js"></script>
