@@ -463,18 +463,43 @@
       <div class="modal-form">
         <h3 class="modal-heading">Залиште свої дані, ми вам передзвонимо</h3>
         <form action="" class="form">
-          <label class="form-label"> Ім'я
-            <input type="text" class="input">
-          </label>
-          <label class="form-label"> Телефон
-            <input type="tel" class="input">
-          </label>
-          <label class="form-label"> Пошта
-            <input type="email" class="input">
-          </label>
-          <label class="form-label"> Коментар
-            <textarea name="comment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
-          </label>
+
+          <div class="typefield">
+            <label class="form-label">Ім'я
+              <input type="text" class="input">
+            </label>
+            <svg width="18px" height="18px" class="input-icon">
+              <use href="./images/icons/symbol-defs.svg#icon-name"></use>
+            </svg>
+          </div>
+          <div class="typefield">
+            <label class="form-label">Телефон
+              <input type="tel" class="input">
+              </label>
+              <svg width="18px" height="18px" class="input-icon">
+                <use href="./images/icons/symbol-defs.svg#icon-phone"></use>
+              </svg>
+          </div>
+          <div class="typefield">
+            <label class="form-label">Пошта
+              <input type="email" class="input">
+            </label>
+            <svg width="18px" height="18px" class="input-icon">
+              <use href="./images/icons/symbol-defs.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="typefield">
+            <label class="form-label"> Коментар
+              <textarea name="comment" cols="30" rows="10" class="input comment-input" placeholder="Введіть текст"></textarea>
+            </label>
+          </div>
+
+          <div class="licence-checkbox">
+            <label for="checkbox" class="form-checkbox">
+              <input type="checkbox" class="checkbox" id="checkbox">Погоджуюся з розсилкою та приймаю </label>
+              <a href="#" class="agreement-link link">Умови договору</a> 
+                      </div>
+
           <button type="button" class="btn form-btn">Відправити</button>
         </form>
       </div>
