@@ -48,7 +48,7 @@ body {
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 1250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 1250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -68,7 +68,8 @@ body {
   width: 528px;
   padding: 40px;
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -88,22 +89,20 @@ body {
   color: var(--black);
   justify-content: center;
   align-items: center;
- 
 }
 
-
-.close-icon{
+.close-icon {
   display: block;
   margin: 0;
   padding: 0;
   fill: currentColor;
   cursor: pointer;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon:hover {
   transform: scale(1.2);
-  fill: var(--nav-color);  
+  fill: var(--nav-color);
 }
 
 .modal-form {
@@ -111,33 +110,29 @@ body {
   flex-direction: column;
 }
 .modal-heading {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.1;
-text-align: center;
-letter-spacing: 0.03em;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: var(--main-text-color);
+  color: var(--main-text-color);
 
-margin-bottom: 12px;
+  margin-bottom: 12px;
 }
 
-
 .typefield {
- 
   display: flex;
   flex-direction: column;
   color: #000000;
-  
 }
 
 .input-wrap {
-   position: relative;
-   margin-top: 4px;
-   margin-bottom: 10px;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 10px;
 }
 .input {
-  
   display: block;
   padding: 12px 42px;
   width: 100%;
@@ -146,37 +141,37 @@ margin-bottom: 12px;
   font-size: 16px;
   cursor: pointer;
   outline: none;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus {
-  border: 1px solid #2196F3;
-
+  border: 1px solid #2196f3;
 }
 
-
 .form-label {
-display: block;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
 
-color: var(--contacts-color);
-
+  color: var(--contacts-color);
 }
 
 .input-icon {
-position: absolute;
-display: block;
-fill: var(--main-text-color);
-top: 50%;
-left: 15px;
-padding: 0;
-margin: 0;
-transform: translate(0, -50%);
+  position: absolute;
+  display: block;
+  fill: var(--main-text-color);
+  top: 50%;
+  left: 15px;
+  padding: 0;
+  margin: 0;
+  transform: translate(0, -50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:focus + .input-icon {
-fill: var(--nav-color);
+  fill: var(--nav-color);
 }
 .comment-form {
   margin-bottom: 20px;
@@ -202,11 +197,11 @@ fill: var(--nav-color);
 
 .form-checkbox {
   display: inline;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 
-color: var(--contacts-color);
+  color: var(--contacts-color);
 }
 
 .checkbox {
@@ -214,25 +209,23 @@ color: var(--contacts-color);
   visibility: hidden;
 }
 .license-checkbox {
- 
   margin-bottom: 30px;
 }
 
 .form-checkbox {
- position: relative;
+  position: relative;
 }
 .check-icon {
-position: absolute;
-display: flex;
-align-items: center;
-top: 0;
-left: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  left: 0;
 
-fill: var(--nav-color);
+  fill: var(--nav-color);
 
-margin: 0;
-padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 .uncheck-icon {
@@ -241,38 +234,37 @@ padding: 0;
   left: 0px;
   fill: currentColor;
   background-color: #ececec;
-  
 }
 
-.checkbox:checked ~ .uncheck-icon{
-visibility: hidden;
+.checkbox:checked ~ .uncheck-icon {
+  visibility: hidden;
 }
 
 .agreement-link {
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-color: var(--nav-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--nav-color);
 }
 .form-btn {
-display: block;
-margin: 0 auto;
-padding: 10px 52px;
-background: #188CE8;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-color: var(--white-text);
-font-weight: 700;
-font-size: 16px;
-line-height: 1.88;
-cursor: pointer;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  margin: 0 auto;
+  padding: 10px 52px;
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn:active{
- transform: translateY(4px);
+.form-btn:active {
+  transform: translateY(4px);
 }
 
 /* Header */
@@ -873,8 +865,6 @@ PORTFOLIO PAGE
   margin-left: 93px;
   margin-right: auto;
   flex-direction: column;
-  
-
 }
 .subscribe-header {
   font-weight: 700;
@@ -892,7 +882,6 @@ PORTFOLIO PAGE
 
 .subscribe-form {
   display: flex;
-  
 }
 
 .submit-btn {
@@ -904,7 +893,7 @@ PORTFOLIO PAGE
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  
+
   border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -922,13 +911,13 @@ PORTFOLIO PAGE
 }
 
 .submit-btn::after {
-  content: '';
+  content: "";
   display: block;
   width: 24px;
   height: 24px;
 
   background-image: url(../images/icon-send.svg);
-  fill:var(--white-text);
+  fill: var(--white-text);
 
   margin-left: 10px;
 }
@@ -942,25 +931,20 @@ PORTFOLIO PAGE
   width: 358px;
   background: transparent;
   padding: 15px;
- 
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: var(--white-text);
   caret-color: var(--nav-color);
 
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .subscribe-input:hover,
-.subscribe-input:focus{
-    outline: transparent;
-    border:1px solid var(--nav-color);
-    
-
+.subscribe-input:focus {
+  outline: transparent;
+  border: 1px solid var(--nav-color);
 }
-.subscribe-input:not(:placeholder-shown){
- 
-  border:1px solid var(--nav-color);
-
+.subscribe-input:not(:placeholder-shown) {
+  border: 1px solid var(--nav-color);
 }
