@@ -239,6 +239,7 @@ body {
   margin: 0;
   padding: 0;
   transform: scale(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked ~ .check-icon {
@@ -258,7 +259,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--nav-color);
-  /* border-bottom: 1px solid var(--nav-color); */
 }
 
 .agreement-link::after {
